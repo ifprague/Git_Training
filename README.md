@@ -38,14 +38,14 @@ https://www.youtube.com/watch?v=HVsySz-h9r4&list=PL-osiE80TeTuRUfjRe54Eea17-YfnO
 1) `git clone [URL]`	   # clones repos to folder from the URL copied from website
 2) `git branch [BranchName]`	   # creates new branch
 3) `git checkout [BranchName]`	   # switches to existing branch
-
+4) `git push -u origin [BranchName]`	# first push of newly created branch
 
 ### Example 2, Working in directiory on personal branch ###
 1) `git checkout [BranchName]`    # go to personal branch to work
 2) `git status`	   # see changes
 3) `git add [Filename / Dir . / .]`    # adds files to staging area
 4) `git commit -m 'message'`
-5) `git push`    # uploads branch to remote repo 
+5) `git push`    # uploads branch to remote repo (if it exists on remote repo, if not use `git push -u origin [BranchName]`)
 6)  After pushing, pull/merge request can be made for point person to review and merge into main on the DevOps website
 
 
