@@ -54,5 +54,5 @@ https://www.youtube.com/watch?v=HVsySz-h9r4&list=PL-osiE80TeTuRUfjRe54Eea17-YfnO
 6) `git merge [branch-b]`	# branch to be merged
 7) conflict happens - manual edit the change in the editor
 8) `git commit -m 'msg'`	# commit after resolving conflict
-9) g`it branch -d [BranchName]`	# deletes branch if needed
+9) `git branch -d [BranchName]`	# deletes branch if needed
 
