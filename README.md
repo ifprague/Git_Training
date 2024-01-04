@@ -24,11 +24,11 @@ https://www.youtube.com/watch?v=HVsySz-h9r4&list=PL-osiE80TeTuRUfjRe54Eea17-YfnO
 #### Example command flow ####
 
 # Main branch to be edited only by point person
-# For basic work branches to be used
+# For basic work - branches are used
 
 # Example 1, Cloning existing repo and creating new personal branch:
-0) cd <dir url>	# go to directiory
-1) git clone <URL>	# clones to folder
+0) cd <dir URL>	# go to directiory
+1) git clone <URL>	# clones to folder the URL copied from website
 2) git branch <BranchName>	# creates new branch
 3) git checkout <BranchName>	# switches to existing branch
 
@@ -38,6 +38,8 @@ https://www.youtube.com/watch?v=HVsySz-h9r4&list=PL-osiE80TeTuRUfjRe54Eea17-YfnO
 2) git status	# see changes
 3) git add <Filename / Dir . / .> # adds files to staging area
 4) git commit -m 'message'
+5) git push # uploads branch to remote repo
+	# here pull/merge request can be made for point person to review and merge into main
 
 
 # Example 3, Merging Branches + Conflicts:
