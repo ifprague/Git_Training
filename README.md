@@ -74,7 +74,7 @@ https://www.youtube.com/watch?v=HVsySz-h9r4&list=PL-osiE80TeTuRUfjRe54Eea17-YfnO
 1) `git log` # copy last commit hash written after 'commit' eg. smth like "c0d640e9f2642bd8fe3c3038e372433141aba4a0"... (first 7 chars are enough)
 2) `git checkout [BranchName]`
 3) `git cherry-pick [Hash]` # transfers commit from Main to Branch
-4) `git checkout Main` # go back to Main
+4) `git checkout main` # go back to Main
 5) `git log` # copy hash of previous commit you want to get back to
 6) Here are 3 options to reset a) Soft b) Mixed c) Hard
 7) `git reset --soft [Hash]` # gets back to previous state BEFORE commit with change already added to staging
