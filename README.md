@@ -60,3 +60,25 @@ https://www.youtube.com/watch?v=HVsySz-h9r4&list=PL-osiE80TeTuRUfjRe54Eea17-YfnO
 8) `git commit -m 'msg'`	# commit after resolving conflict
 9) `git branch -d [BranchName]`	# deletes branch if needed
 
+### Example 4, Fixing common mistakes ###
+#### Example 4.1, Fixing bad commit message !BEFORE! pushing to remote ####
+1) `git add [Filename]`
+2) `git commit -m 'Wrong commit message'`
+3) `git commit --amend -m 'Correct commit message'` 
+
+#### Example 4.2, forgetting to commit a file that was supposed to be part of last commit without any other change in message etc. !BEFORE! pushing ####
+1) `git add [forgotten file]`
+1) `git commit --amend --no-edit`
+
+#### Example 4.3, accidental commiting to Main instead of Branch - Moving commit to Branch and going a commit back on Main ####
+1) `git log` # copy last commit hash written after 'commit' eg. smth like "c0d640e9f2642bd8fe3c3038e372433141aba4a0"... (first 7 chars are enough)
+2) `git checkout [BranchName]`
+3) `git cherry-pick [Hash]` # transfers commit from Main to Branch
+4) `git checkout Main` # go back to Main
+5) `git log` # copy hash of previous commit you want to get back to
+6) Here are 3 options to reset a) Soft b) Mixed c) Hard
+7) `git reset --soft [Hash]` # gets back to previous state BEFORE commit with change already added to staging
+7) `git reset [Hash]` # gets back to previous state BEFORE commit with change kept but not added to staging (default)
+7) `git reset --hard [Hash]` # get back to previous state BEFORE commit, changes completely deleted from Main
+8) All three resets DO NOT affect untracked files
+9) `git clean -df` # gets rid of all untracked directories and files
