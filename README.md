@@ -20,7 +20,7 @@ https://www.youtube.com/watch?v=HVsySz-h9r4&list=PL-osiE80TeTuRUfjRe54Eea17-YfnO
 
 	`git config --global https.proxy http://10.1.123.16:8888`
 
-2) set git credentials in credential manager (OKTA etc.) (for example when doing first clone from Aon Repo) - behaviour is rather unpredictable, sometimes multiple logins needed, sometimes login needed after each push/pull...
+2) set git credentials in credential manager (OKTA etc.) (for example when doing first clone from Aon Repo) - behaviour is rather unpredictable, sometimes multiple logins needed, sometimes login needed after each push/pull... If that does not work, generate one time password in DevOps. Near the clone button.
 
 
 ##############################
