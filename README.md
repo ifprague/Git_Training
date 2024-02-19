@@ -14,7 +14,7 @@ https://www.youtube.com/watch?v=HVsySz-h9r4&list=PL-osiE80TeTuRUfjRe54Eea17-YfnO
 
 
 #### Must do steps after installation ####
-1) set proxy by copying these commands to terminal
+1) set proxy by copying these commands to terminal (Prague only proxy)
 
 	`git config --global http.proxy http://10.1.123.16:8888`
 
@@ -28,7 +28,7 @@ https://www.youtube.com/watch?v=HVsySz-h9r4&list=PL-osiE80TeTuRUfjRe54Eea17-YfnO
 ##############################
 
 
-### Main (Master) branch to be edited only by point person ###
+### Main (Master) branch to be edited only by PROJECT person ###
 #### For basic work - branches are used ####
 
 ##############################
